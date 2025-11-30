@@ -1,7 +1,7 @@
 /*  your css code here. If applicable */
 .square {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background-color: #E6E6FA; /* Lavender */
     display: inline-block;
     margin: 10px;
