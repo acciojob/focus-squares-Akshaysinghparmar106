@@ -1,24 +1,21 @@
 <!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-	<title>Colorful Squares</title>
-	<style>
-		.square {
-			width: 50px;
-			height: 50px;
-			display: inline-block;
-			margin: 10px;
-			background-color: #E6E6FA; /*lavender */
-			cursor: pointer;
-		}
-	</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Focus Squares</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-	<div class="square" id="square1" ></div>
-	<div class="square" id="square2" ></div>
-	<div class="square" id="square3" ></div>
+  <h2>Focus Squares</h2>
 
-	<script type="text/javascript" src="./script.js">
-	</script>
+  <div class="squares" aria-label="Three interactive squares">
+    <div class="square" tabindex="0" aria-label="Square 1"></div>
+    <div class="square" tabindex="0" aria-label="Square 2"></div>
+    <div class="square" tabindex="0" aria-label="Square 3"></div>
+  </div>
+
+  <!-- No JavaScript required for the behavior -->
 </body>
 </html>
