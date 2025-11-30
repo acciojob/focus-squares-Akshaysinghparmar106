@@ -1,63 +1,10 @@
 /*  your css code here. If applicable */
-:root{
-  --lavender: #E6E6FA;
-  --coffee:   #6F4E37;
-}
-
-body{
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
-  padding: 28px;
-  background: #fff;
-  color: #111;
-}
-
-h2 { margin-bottom: 16px; }
-
-/* layout */
-.squares{
-  display: flex;
-  gap: 16px;
-  align-items: center;
-}
-
-/* base square style */
-.square{
-  width: 120px;
-  height: 120px;
-  background: var(--lavender);   /* default lavender */
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
-  transition: background 180ms ease, transform 120ms ease;
-  outline: none; /* we'll provide custom focus style */
-}
-
-/* Slight lift on hover/focus for affordance */
-.square:hover,
-.square:focus{
-  transform: translateY(-4px);
-}
-
-/* When the container is hovered, make all squares coffee.
-   (This activates as soon as the pointer is over any square.) */
-.squares:hover .square{
-  background: var(--coffee);
-}
-
-/* But the hovered (or focused) square should stay lavender.
-   This rule must come after the container rule so it overrides it. */
-.square:hover,
-.square:focus{
-  background: var(--lavender);
-}
-
-/* Keyboard-visible focus ring for accessibility */
-.square:focus{
-  box-shadow: 0 0 0 4px rgba(110,130,255,0.18), 0 2px 6px rgba(0,0,0,0.12);
-}
-
-/* small responsive tweak */
-@media (max-width: 420px){
-  .squares{ gap: 10px; }
-  .square{ width: 90px; height: 90px; }
+.square {
+    width: 80px;
+    height: 80px;
+    background-color: #E6E6FA; /* Lavender */
+    display: inline-block;
+    margin: 10px;
+    transition: 0.2s;
 }
 
