@@ -1,10 +1,15 @@
 /*  your css code here. If applicable */
+.container {
+  display: flex;
+  gap: 30px;
+  margin-top: 60px;
+  justify-content: left;
+}
+
 .square {
-    width: 60px;
-    height: 60px;
-    background-color: #E6E6FA; /* Lavender */
-    display: inline-block;
-    margin: 10px;
-    transition: 0.2s;
+  width: 60px;
+  height: 60px;
+  background-color: #E6E6FA; /* Lavender */
+  transition: background-color 0.3s ease;
 }
 
